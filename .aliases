@@ -6,5 +6,23 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
-# Create WIP commit
-alias wip_commit="git add -A && git commit -m 'WIP'"
+# Run the graphql schema generator (only works at a Tandem rails project)
+alias run_schema_tests='bundle exec spring rspec --color spec/graphql/gastown/schema_spec.rb'
+
+# Add whitespace to dock
+alias add_whitespace="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
+
+# Create a wip
+alias git_wip="git add -A && git commit -m 'wip'"
+
+alias ngrok="~/ngrok"
+
+alias aws-dkbz='ssh -i /Users/Ignacio/Downloads/nacho_creds/temp-schlep.pem ubuntu@ec2-13-59-122-245.us-east-2.compute.amazonaws.com'
+
+alias cms-dkbz='ssh -i ~/.ssh/cms-dkbz-single.pem ubuntu@18.221.148.228'
+
+alias ssh-do='ssh deploy@134.209.59.50'
+
+alias hrc='heroku run rails c'
+
+alias undo_commit='git reset HEAD~ --soft && git reset HEAD'

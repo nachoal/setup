@@ -38,14 +38,5 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Cellar
 export PATH="/usr/local/Cellar/node/11.10.0/bin:${PATH}"
 
-
-
 # MacVim path
 export PATH=$PATH:/Applications/MacVim.app/Contents/bin
-
-alias ngrok="~/ngrok"
-alias aws-dkbz='ssh -i /Users/Ignacio/Downloads/nacho_creds/temp-schlep.pem ubuntu@ec2-13-59-122-245.us-east-2.compute.amazonaws.com'
-alias cms-dkbz='ssh -i ~/.ssh/cms-dkbz-single.pem ubuntu@18.221.148.228'
-alias ssh-do='ssh deploy@134.209.59.50'
-alias hrc='heroku run rails c'
-alias undo_commit='git reset HEAD~ --soft && git reset HEAD'
